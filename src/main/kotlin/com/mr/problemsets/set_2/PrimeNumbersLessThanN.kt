@@ -1,24 +1,28 @@
 package com.mr.problemsets.set_2
 
+import kotlin.math.sqrt
+
 /**
- * Prime numbers less than N
- * You are given a non-negative integer N. Your task is to write a program that can print the number of prime numbers less than N.
- * Input
- * The input contains an integer N, representing the non-negative integer.
- * Output
- * Print the number of prime numbers less than N.
+ * 204. Count Primes
+ * Medium
+ * Given an integer n, return the number of prime numbers that are strictly less than n.
  *
- * Constraints
- * 0 <= N <= 5 * 106
- *
- * Example #1 Input 10
- * Output 4
+ * Example 1:
+ * Input: n = 10
+ * Output: 4
  * Explanation: There are 4 prime numbers less than 10, they are 2, 3, 5, 7.
  *
- * Example #2 Input 0
- * Output 0
- * Explanation: There are no prime numbers less than 0.
+ * Example 2:
+ * Input: n = 0
+ * Output: 0
  *
+ * Example 3:
+ * Input: n = 1
+ * Output: 0
+ *
+ * Constraints:
+ *
+ * 0 <= n <= 5 * 106
  */
 
 fun countPrimesLessThanN(n: Int): Int {
@@ -30,27 +34,21 @@ fun countPrimesLessThanN(n: Int): Int {
 }
 
 fun isPrimeOptimizedEratosthenesSieve(n: Int): Int {
-    if (n < 2) return 0
-
+    if (n <= 2) return 0
 
     // Create array: isPrimeSieve[i] = true means i might be prime
-
     val isPrimeSieve = BooleanArray(n) { true }
     isPrimeSieve[0] = false
     isPrimeSieve[1] = false
 
-    var i = 2
-    while (i * i < n) {
+    for (i in 2..sqrt(n.toDouble()).toInt()) {
         if (isPrimeSieve[i]) {
             // Mark all multiples of i as not prime
             // Start from i*i (smaller multiples already crossed out)
-            var j = i * i
-            while (j < n) {
+            for (j in i*i until n step i) {
                 isPrimeSieve[j] = false
-                j += i
             }
         }
-        i++
     }
 
     return isPrimeSieve.count { it }

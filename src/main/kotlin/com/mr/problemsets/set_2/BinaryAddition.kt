@@ -1,27 +1,24 @@
 package com.mr.problemsets.set_2
 
 /**
- * Binary Addition
- * Given two binary strings a and b, find their sum as a binary string. i.e, perform the binary addition operation on these values.
+ * 67. Add Binary
+ * Easy
+ * Given two binary strings a and b, return their sum as a binary string.
  *
- * Input
- * The first line of input contains a string a, denoting the first binary number.
- * The second line of input contains a string b, denoting the second binary number.
- * Output
- * The sum of a and b, in binary form.
- * Constraints
+ * Example 1:
+ * Input: a = "11", b = "1"
+ * Output: "100"
+ *
+ * Example 2:
+ * Input: a = "1010", b = "1011"
+ * Output: "10101"
+ *
+ * Constraints:
  * 1 <= a.length, b.length <= 104
  * a and b consist only of '0' or '1' characters.
  * Each string does not contain leading zeros except for the zero itself.
- * Example #1
- * Input: 11 , 1
- * Output: 100
- * Explanation: Binary addition of these values is 100.
- * Example #2
- * Input:  1010, 1011
- * Output 10101
- * Explanation: Binary addition of these values is 10101.
  */
+
 fun addbinaryQuick(a: String, b: String): String {
     return (a.toInt(2) + b.toInt(2)).toString(2)
 }

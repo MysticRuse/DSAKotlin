@@ -1,60 +1,40 @@
 package com.mr.problemsets.set_2
 
 /**
- * LRU cache Operations
- * LRUCache(int capacity): Initialize the LRU cache with a positive capacity.
- * No keys should be present in the cache initially.
- *
- * int get(int key): Return the value of the key, if it exists.
- * Otherwise, return -1.
- *
- * void put(int key, int value): Update the value of the key if the key exists.
- * Otherwise,add the key-value pair to the cache.
- * If the number of keys exceeds the capacity from this operation, evict the least recently used key.
+ * 146. LRU Cache
+ * Medium
+ * Companies
  * Design a data structure that follows the constraints of a Least Recently Used (LRU) cache.
- * Your LRU Cache should support the following operations:
- * LRUCache(int capacity) Initialize the LRU cache with positive capacity.
+ *
+ * Implement the LRUCache class:
+ * LRUCache(int capacity) Initialize the LRU cache with positive size capacity.
  * int get(int key) Return the value of the key if the key exists, otherwise return -1.
- * void put(int key, int value) Update the value of the key if the key exists.
- *     - Otherwise, add the key-value pair to the cache.
- *     - If the number of keys exceeds the capacity from this operation, evict the least recently used key.
+ * void put(int key, int value) Update the value of the key if the key exists. Otherwise, add the key-value pair to the cache. If the number of keys exceeds the capacity from this operation, evict the least recently used key.
+ * The functions get and put must each run in O(1) average time complexity.
  *
- * Note: Any key that is accessed for a valid get() OR put() operation can be considered as recently used key.
+ * Example 1:
  * Input
- *   The first line of input contains an integer N, representing the capacity of the cache.
- *   The second line of input contains an integer M, representing the number of operations.
- *  The third line of input contains M space-separated strings, each representing an operation. The format of an operation can be one of these:
- *  GET, x: Get the value of key x present in Cache
- *  PUT, x, y: Update the value of the key x if x exists, else add the key-value (x, y) pair to the cache.
- *
+ * ["LRUCache", "put", "put", "get", "put", "get", "put", "get", "get", "get"]
+ * [[2], [1, 1], [2, 2], [1], [3, 3], [2], [4, 4], [1], [3], [4]]
  * Output
- * An array of values returned by the GET operations.
- * Constraints
- * 1 <= N <= 20
+ * [null, null, null, 1, null, -1, null, -1, 3, 4]
+ * Explanation
+ * LRUCache lRUCache = new LRUCache(2);
+ * lRUCache.put(1, 1); // cache is {1=1}
+ * lRUCache.put(2, 2); // cache is {1=1, 2=2}
+ * lRUCache.get(1);    // return 1
+ * lRUCache.put(3, 3); // LRU key was 2, evicts key 2, cache is {1=1, 3=3}
+ * lRUCache.get(2);    // returns -1 (not found)
+ * lRUCache.put(4, 4); // LRU key was 1, evicts key 1, cache is {4=4, 3=3}
+ * lRUCache.get(1);    // return -1 (not found)
+ * lRUCache.get(3);    // return 3
+ * lRUCache.get(4);    // return 4
  *
- * Example #1 Input
- *   2
- *   6
- *   GET,2 PUT,1,100 PUT,2,125 PUT,3,150 GET,1 GET,3
- * Output
- *   -1 -1 150O
- * Explanation: So the operations on LRU cache with capacity 2 are,
- * GET, 2 --> The Cache is initially empty. i.e, Key 2 does not exist, so return -1 PUT,1,100 --> Insert Key 1 with value 100 --> [ (1,100) ]
- * PUT,2,125 --> Insert Key 2 with value 125 --> [ ( 1,100 ), ( 2, 125 ) ]
- * PUT,3,150 --> Cache is full, so delete the least recently used key 1 and insert the new pair --> [( 2, 125 ) (3, 150) ]
- * GET, 1 --> Key 1 does not exist, so return -1 GET, 3 --> Key 3 exists, so return its value 150 So, the final array will be [-1, -1, 150]
- *
- * Example #2 Input
- *   3
- *   5
- *   PUT,11,25 PUT,22,50 PUT,11,75 GET,11 GET,22
- * Output
- *  75 50
- * Explanation: The operations on LRU cache with capacity 3 are, PUT,11,25 --> Insert Key 11 with value 25 --> [ (11,25) ] PUT,22,50 --> Insert Key 22 with value 50 --> [ (11, 25), ( 22, 50 ) ]
- * PUT,11,75 --> Key 11 exists in the cache, so update the Key 11 with value 75 --> [ ( 22, 50 ), (11, 75) ]
- * (Here LRU will be key 22, since 11 is updated with new value).
- * GET, 11 --> Key 11 exists, so return its value 75 GET, 22 --> Key 22 exists, so return its value 50 So, the final array will be [75, 50].
- *
+ * Constraints:
+ * 1 <= capacity <= 3000
+ * 0 <= key <= 104
+ * 0 <= value <= 105
+ * At most 2 * 105 calls will be made to get and put.
  */
 
 /**
@@ -158,33 +138,4 @@ class LRUCache(private val capacity: Int) {
         node.prev?.next = node.next
         node.next?.prev = node.prev
     }
-}
-
-/**
- * Main function to handle input/output as per problem format.
- */
-fun main() {
-    val capacity = readln().trim().toInt()
-    val numOperations = readln().trim().toInt()
-    val operations = readln().trim().split(" ")
-
-    val cache = LRUCache(capacity)
-    val results = mutableListOf<Int>()
-
-    for (op in operations) {
-        val parts = op.split(",")
-        when (parts[0]) {
-            "GET" -> {
-                val key = parts[1].toInt()
-                results.add(cache.get(key))
-            }
-            "PUT" -> {
-                val key = parts[1].toInt()
-                val value = parts[2].toInt()
-                cache.put(key, value)
-            }
-        }
-    }
-
-    println(results.joinToString(" "))
 }
