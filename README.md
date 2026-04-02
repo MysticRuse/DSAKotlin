@@ -1,61 +1,32 @@
 # DSAKotlin
 
+Kotlin solutions for data structures and algorithms, grouped by pattern and problem set.
 
----
+## Problem index
 
-## 🧩 Problems by Pattern
+The full inventory (links into `src/main/kotlin`, difficulty, and summary counts) lives in **[PROBLEMS.generated.md](PROBLEMS.generated.md)**.
 
-### Two Pointers
+Regenerate it after you add or move solutions:
 
-| # | Problem | Difficulty | File |
-|---|---------|------------|------|
-| 1 | [Valid Palindrome](src/main/kotlin/com/mr/patterns/twopointers/easy/ValidPalindrome.kt) | Easy | `ValidPalindrome.kt` |
-| 2 | [3Sum](src/main/kotlin/com/mr/patterns/twopointers/medium/ThreeSum.kt) | Medium | `ThreeSum.kt` |
-| 3 | [Remove Nth Node From End of List](src/main/kotlin/com/mr/patterns/twopointers/medium/RemoveNthFromListEnd.kt) | Medium | `RemoveNthFromListEnd.kt` |
+```bash
+./gradlew generateProblemsIndex
+```
 
----
+Commit the updated `PROBLEMS.generated.md` when you want the repo view on GitHub to stay current.
 
-## 📚 Problem Sets
+## Running tests
 
-### Set 1
+```bash
+./gradlew test
+```
 
-| # | Problem | Difficulty | File |
-|---|---------|------------|------|
-| 1 | [Frequency Winner](src/main/kotlin/com/mr/problemsets/set_1/FrequencyWinner.kt) | Easy | `FrequencyWinner.kt` |
-| 2 | [Count Subarrays with Sum K](src/main/kotlin/com/mr/problemsets/set_1/CountSubArraysWithSumK.kt) | Medium | `CountSubArraysWithSumK.kt` |
-| 3 | [Min Meeting Rooms](src/main/kotlin/com/mr/problemsets/set_1/MinMeetingRooms.kt) | Medium | `MinMeetingRooms.kt` |
-| 4 | [Shortest Path in Binary Matrix](src/main/kotlin/com/mr/problemsets/set_1/ShortestPathInBinaryMatrix.kt) | Medium | `ShortestPathInBinaryMatrix.kt` |
-| 5 | [Valid Near Palindrome](src/main/kotlin/com/mr/problemsets/set_1/ValidNearPalindrome.kt) | Easy | `ValidNearPalindrome.kt` |
+## Gradle JDK
 
-### Set 2
+Use **JDK 21 or 23** to run Gradle. If `JAVA_HOME` points at **JDK 25**, configuring the build can fail with `IllegalArgumentException: 25.0.1` while compiling `build.gradle.kts`. On macOS: `export JAVA_HOME=$(/usr/libexec/java_home -v 23)`, or set `org.gradle.java.home` in `gradle.properties` to a JDK 23 install. Native-access warnings from Gradle are addressed with `--enable-native-access=ALL-UNNAMED` on the Gradle JVM in `gradle.properties`.
 
-| # | Problem                                                                                        | Difficulty | File |
-|---|------------------------------------------------------------------------------------------------|------------|------|
-| 1 | [Binary Addition](src/main/kotlin/com/mr/problemsets/set_2/BinaryAddition.kt)                  | Easy       | `BinaryAddition.kt` |
-| 2 | [LRU Cache Operations](src/main/kotlin/com/mr/problemsets/set_2/LruCacheOps.kt)                | Medium     | `LruCacheOps.kt` |
-| 3 | [Move Zeroes to End](src/main/kotlin/com/mr/problemsets/set_2/MoveZeroesToEnd.kt)              | Easy       | `MoveZeroesToEnd.kt` |
-| 4 | [Prime Numbers Less Than N](src/main/kotlin/com/mr/problemsets/set_2/PrimeNumbersLessThanN.kt) | Medium     | `PrimeNumbersLessThanN.kt` |
-| 5 | [Word Break](src/main/kotlin/com/mr/problemsets/set_2/WordBreak.kt)                            | Medium     | `StringSegmentation.kt` |
-
----
-
-## 🚀 Running Tests
-
-
-## 📋 Tech Stack
+## Tech stack
 
 - **Language:** Kotlin 2.2
 - **JDK:** 23
 - **Build:** Gradle with Kotlin DSL
 - **Testing:** JUnit 5
-
----
-
-## 📊 Problem Count Summary
-
-| Category | Easy | Medium | Hard | Total |
-|----------|------|------|------|-------|
-| Two Pointers | 1    | 2    | 0 | 3 |
-| Set 1 | 2    | 3    | 0 | 5 |
-| Set 2 | 2    | 3    | 0 | 5 |
-| **Total** | **6** | **7** | **0** | **13** |
