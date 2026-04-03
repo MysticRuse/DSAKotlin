@@ -2,6 +2,22 @@
 
 Kotlin solutions for data structures and algorithms, grouped by pattern and problem set.
 
+Top 8 patterns:
+  1. Two Pointers
+  2. Sliding Window
+  3. Binary Search
+  4. BFS
+  5. DFS
+  6. Backtracking
+  7. Priority Queue
+  8. Dynamic Programming
+  9. Top K elements
+  10. Binary Tree Traversal
+  11. Overlapping Intervals
+  12. Monotonic Stack
+  13. Prefix Sum
+  14. Bit Manipulation
+
 ## Problem index
 
 The full inventory (links into `src/main/kotlin`, difficulty, and summary counts) lives in **[PROBLEMS.generated.md](PROBLEMS.generated.md)**.

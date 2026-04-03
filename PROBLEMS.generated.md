@@ -13,6 +13,14 @@
 | 1 | [Longest Substring Without Repeating Chars](src/main/kotlin/com/mr/patterns/slidingwindow/medium/LongestSubstringWithoutRepeatingChars.kt) | Medium | `LongestSubstringWithoutRepeatingChars.kt` |
 | 2 | [Maximum Subarray](src/main/kotlin/com/mr/patterns/slidingwindow/medium/MaximumSubarray.kt) | Medium | `MaximumSubarray.kt` |
 
+### Stacks
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [Valid Parenthesis](src/main/kotlin/com/mr/patterns/stacks/easy/ValidParenthesis.kt) | Easy | `ValidParenthesis.kt` |
+| 2 | [Daily Temperature](src/main/kotlin/com/mr/patterns/stacks/medium/DailyTemperature.kt) | Medium | `DailyTemperature.kt` |
+| 3 | [Min Stack](src/main/kotlin/com/mr/patterns/stacks/medium/MinStack.kt) | Medium | `MinStack.kt` |
+
 ### Two Pointers
 
 | # | Problem | Difficulty | File |
@@ -52,8 +60,9 @@
 | Category | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
 | Sliding Window | 0 | 2 | 0 | 2 |
+| Stacks | 1 | 2 | 0 | 3 |
 | Two Pointers | 1 | 2 | 0 | 3 |
 | Set 1 | 2 | 2 | 1 | 5 |
 | Set 2 | 2 | 3 | 0 | 5 |
-| **Total** | **5** | **9** | **1** | **15** |
+| **Total** | **6** | **11** | **1** | **18** |
 
