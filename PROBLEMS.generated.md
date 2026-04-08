@@ -6,12 +6,21 @@
 
 ## Problems by pattern
 
+### Arraysandhashing
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [Group Anagram](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/GroupAnagram.kt) | Medium | `GroupAnagram.kt` |
+| 2 | [Top KFrequent Elements](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/TopKFrequentElements.kt) | Medium | `TopKFrequentElements.kt` |
+
 ### Sliding Window
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
-| 1 | [Longest Substring Without Repeating Chars](src/main/kotlin/com/mr/patterns/slidingwindow/medium/LongestSubstringWithoutRepeatingChars.kt) | Medium | `LongestSubstringWithoutRepeatingChars.kt` |
-| 2 | [Maximum Subarray](src/main/kotlin/com/mr/patterns/slidingwindow/medium/MaximumSubarray.kt) | Medium | `MaximumSubarray.kt` |
+| 1 | [Best Time To Buy Sell Stocks](src/main/kotlin/com/mr/patterns/slidingwindow/easy/BestTimeToBuySellStocks.kt) | Easy | `BestTimeToBuySellStocks.kt` |
+| 2 | [Contains Duplicate II](src/main/kotlin/com/mr/patterns/slidingwindow/easy/ContainsDuplicateII.kt) | Easy | `ContainsDuplicateII.kt` |
+| 3 | [Longest Substring Without Repeating Chars](src/main/kotlin/com/mr/patterns/slidingwindow/medium/LongestSubstringWithoutRepeatingChars.kt) | Medium | `LongestSubstringWithoutRepeatingChars.kt` |
+| 4 | [Maximum Subarray](src/main/kotlin/com/mr/patterns/slidingwindow/medium/MaximumSubarray.kt) | Medium | `MaximumSubarray.kt` |
 
 ### Stacks
 
@@ -20,6 +29,17 @@
 | 1 | [Valid Parenthesis](src/main/kotlin/com/mr/patterns/stacks/easy/ValidParenthesis.kt) | Easy | `ValidParenthesis.kt` |
 | 2 | [Daily Temperature](src/main/kotlin/com/mr/patterns/stacks/medium/DailyTemperature.kt) | Medium | `DailyTemperature.kt` |
 | 3 | [Min Stack](src/main/kotlin/com/mr/patterns/stacks/medium/MinStack.kt) | Medium | `MinStack.kt` |
+
+### Trees
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [Binary Tree Inorder Traversal](src/main/kotlin/com/mr/patterns/trees/easy/BinaryTreeInorderTraversal.kt) | Easy | `BinaryTreeInorderTraversal.kt` |
+| 2 | [Max Depth Of Binary Tree](src/main/kotlin/com/mr/patterns/trees/easy/MaxDepthOfBinaryTree.kt) | Easy | `MaxDepthOfBinaryTree.kt` |
+| 3 | [Min Depth Of Binary Tree](src/main/kotlin/com/mr/patterns/trees/easy/MinDepthOfBinaryTree.kt) | Easy | `MinDepthOfBinaryTree.kt` |
+| 4 | [Same Tree](src/main/kotlin/com/mr/patterns/trees/easy/SameTree.kt) | Easy | `SameTree.kt` |
+| 5 | [Binary Tree Level Order Traversing](src/main/kotlin/com/mr/patterns/trees/medium/BinaryTreeLevelOrderTraversing.kt) | Medium | `BinaryTreeLevelOrderTraversing.kt` |
+| 6 | [Binary Tree Right Side View](src/main/kotlin/com/mr/patterns/trees/medium/BinaryTreeRightSideView.kt) | Medium | `BinaryTreeRightSideView.kt` |
 
 ### Two Pointers
 
@@ -59,10 +79,12 @@
 
 | Category | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
-| Sliding Window | 0 | 2 | 0 | 2 |
+| Arraysandhashing | 0 | 2 | 0 | 2 |
+| Sliding Window | 2 | 2 | 0 | 4 |
 | Stacks | 1 | 2 | 0 | 3 |
+| Trees | 4 | 2 | 0 | 6 |
 | Two Pointers | 1 | 2 | 0 | 3 |
 | Set 1 | 2 | 2 | 1 | 5 |
 | Set 2 | 2 | 3 | 0 | 5 |
-| **Total** | **6** | **11** | **1** | **18** |
+| **Total** | **12** | **15** | **1** | **28** |
 
