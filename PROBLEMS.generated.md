@@ -6,18 +6,20 @@
 
 ## Problems by pattern
 
-### Arrays and Hashing
+### Arraysandhashing
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
 | 1 | [Group Anagram](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/GroupAnagram.kt) | Medium | `GroupAnagram.kt` |
 | 2 | [Top KFrequent Elements](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/TopKFrequentElements.kt) | Medium | `TopKFrequentElements.kt` |
 
-### Binary Search
+### Binarysearch
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
 | 1 | [Binary Search](src/main/kotlin/com/mr/patterns/binarysearch/easy/BinarySearch.kt) | Easy | `BinarySearch.kt` |
+| 2 | [Find Min Rotated Sorted Array](src/main/kotlin/com/mr/patterns/binarysearch/medium/FindMinRotatedSortedArray.kt) | Medium | `FindMinRotatedSortedArray.kt` |
+| 3 | [Search Rotated Sorted Array](src/main/kotlin/com/mr/patterns/binarysearch/medium/SearchRotatedSortedArray.kt) | Medium | `SearchRotatedSortedArray.kt` |
 
 ### Graphs
 
@@ -90,16 +92,16 @@
 
 ## Problem count summary
 
-| Category           | Easy | Medium | Hard | Total |
-|--------------------|------|--------|------|-------|
-| Arrays and Hashing | 0 | 2 | 0 | 2 |
-| Binary Search      | 1 | 0 | 0 | 1 |
-| Graphs             | 0 | 2 | 0 | 2 |
-| Sliding Window     | 2 | 2 | 0 | 4 |
-| Stacks             | 1 | 2 | 0 | 3 |
-| Trees              | 4 | 2 | 0 | 6 |
-| Two Pointers       | 1 | 2 | 0 | 3 |
-| Set 1              | 2 | 2 | 1 | 5 |
-| Set 2              | 2 | 3 | 0 | 5 |
-| **Total**          | **13** | **17** | **1** | **31** |
+| Category | Easy | Medium | Hard | Total |
+|----------|------|--------|------|-------|
+| Arraysandhashing | 0 | 2 | 0 | 2 |
+| Binarysearch | 1 | 2 | 0 | 3 |
+| Graphs | 0 | 2 | 0 | 2 |
+| Sliding Window | 2 | 2 | 0 | 4 |
+| Stacks | 1 | 2 | 0 | 3 |
+| Trees | 4 | 2 | 0 | 6 |
+| Two Pointers | 1 | 2 | 0 | 3 |
+| Set 1 | 2 | 2 | 1 | 5 |
+| Set 2 | 2 | 3 | 0 | 5 |
+| **Total** | **13** | **19** | **1** | **33** |
 
