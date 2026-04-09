@@ -13,6 +13,13 @@
 | 1 | [Group Anagram](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/GroupAnagram.kt) | Medium | `GroupAnagram.kt` |
 | 2 | [Top KFrequent Elements](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/TopKFrequentElements.kt) | Medium | `TopKFrequentElements.kt` |
 
+### Graphs
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [Clone Graph](src/main/kotlin/com/mr/patterns/graphs/medium/CloneGraph.kt) | Medium | `CloneGraph.kt` |
+| 2 | [Number Of Islands](src/main/kotlin/com/mr/patterns/graphs/medium/NumberOfIslands.kt) | Medium | `NumberOfIslands.kt` |
+
 ### Sliding Window
 
 | # | Problem | Difficulty | File |
@@ -80,11 +87,12 @@
 | Category | Easy | Medium | Hard | Total |
 |----------|------|--------|------|-------|
 | Arraysandhashing | 0 | 2 | 0 | 2 |
+| Graphs | 0 | 2 | 0 | 2 |
 | Sliding Window | 2 | 2 | 0 | 4 |
 | Stacks | 1 | 2 | 0 | 3 |
 | Trees | 4 | 2 | 0 | 6 |
 | Two Pointers | 1 | 2 | 0 | 3 |
 | Set 1 | 2 | 2 | 1 | 5 |
 | Set 2 | 2 | 3 | 0 | 5 |
-| **Total** | **12** | **15** | **1** | **28** |
+| **Total** | **12** | **17** | **1** | **30** |
 
