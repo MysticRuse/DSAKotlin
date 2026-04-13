@@ -27,6 +27,8 @@
 |---|---------|------------|------|
 | 1 | [Climbing Stairs](src/main/kotlin/com/mr/patterns/dp/easy/ClimbingStairs.kt) | Easy | `ClimbingStairs.kt` |
 | 2 | [Coin Change](src/main/kotlin/com/mr/patterns/dp/medium/CoinChange.kt) | Medium | `CoinChange.kt` |
+| 3 | [House Robber](src/main/kotlin/com/mr/patterns/dp/medium/HouseRobber.kt) | Medium | `HouseRobber.kt` |
+| 4 | [House Robber II](src/main/kotlin/com/mr/patterns/dp/medium/HouseRobberII.kt) | Medium | `HouseRobberII.kt` |
 
 ### Graphs
 
@@ -103,7 +105,7 @@
 |--------------------|------|--------|------|-------|
 | Arrays and Hashing | 0 | 2 | 0 | 2 |
 | Binary Search      | 1 | 2 | 0 | 3 |
-| DP                 | 1 | 1 | 0 | 2 |
+| DP                 | 1 | 3 | 0 | 4 |
 | Graphs             | 0 | 2 | 0 | 2 |
 | Sliding Window     | 2 | 2 | 0 | 4 |
 | Stacks             | 1 | 2 | 0 | 3 |
@@ -111,5 +113,5 @@
 | Two Pointers       | 1 | 2 | 0 | 3 |
 | Set 1              | 2 | 2 | 1 | 5 |
 | Set 2              | 2 | 3 | 0 | 5 |
-| **Total**          | **14** | **20** | **1** | **35** |
+| **Total**          | **14** | **22** | **1** | **37** |
 
