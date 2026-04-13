@@ -6,20 +6,27 @@
 
 ## Problems by pattern
 
-### Arraysandhashing
+### Arrays and Hashing
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
 | 1 | [Group Anagram](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/GroupAnagram.kt) | Medium | `GroupAnagram.kt` |
 | 2 | [Top KFrequent Elements](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/TopKFrequentElements.kt) | Medium | `TopKFrequentElements.kt` |
 
-### Binarysearch
+### Binary Search
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
 | 1 | [Binary Search](src/main/kotlin/com/mr/patterns/binarysearch/easy/BinarySearch.kt) | Easy | `BinarySearch.kt` |
 | 2 | [Find Min Rotated Sorted Array](src/main/kotlin/com/mr/patterns/binarysearch/medium/FindMinRotatedSortedArray.kt) | Medium | `FindMinRotatedSortedArray.kt` |
 | 3 | [Search Rotated Sorted Array](src/main/kotlin/com/mr/patterns/binarysearch/medium/SearchRotatedSortedArray.kt) | Medium | `SearchRotatedSortedArray.kt` |
+
+### DP
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [Climbing Stairs](src/main/kotlin/com/mr/patterns/dp/easy/ClimbingStairs.kt) | Easy | `ClimbingStairs.kt` |
+| 2 | [Coin Change](src/main/kotlin/com/mr/patterns/dp/medium/CoinChange.kt) | Medium | `CoinChange.kt` |
 
 ### Graphs
 
@@ -92,16 +99,17 @@
 
 ## Problem count summary
 
-| Category | Easy | Medium | Hard | Total |
-|----------|------|--------|------|-------|
-| Arraysandhashing | 0 | 2 | 0 | 2 |
-| Binarysearch | 1 | 2 | 0 | 3 |
-| Graphs | 0 | 2 | 0 | 2 |
-| Sliding Window | 2 | 2 | 0 | 4 |
-| Stacks | 1 | 2 | 0 | 3 |
-| Trees | 4 | 2 | 0 | 6 |
-| Two Pointers | 1 | 2 | 0 | 3 |
-| Set 1 | 2 | 2 | 1 | 5 |
-| Set 2 | 2 | 3 | 0 | 5 |
-| **Total** | **13** | **19** | **1** | **33** |
+| Category           | Easy | Medium | Hard | Total |
+|--------------------|------|--------|------|-------|
+| Arrays and Hashing | 0 | 2 | 0 | 2 |
+| Binary Search      | 1 | 2 | 0 | 3 |
+| DP                 | 1 | 1 | 0 | 2 |
+| Graphs             | 0 | 2 | 0 | 2 |
+| Sliding Window     | 2 | 2 | 0 | 4 |
+| Stacks             | 1 | 2 | 0 | 3 |
+| Trees              | 4 | 2 | 0 | 6 |
+| Two Pointers       | 1 | 2 | 0 | 3 |
+| Set 1              | 2 | 2 | 1 | 5 |
+| Set 2              | 2 | 3 | 0 | 5 |
+| **Total**          | **14** | **20** | **1** | **35** |
 
