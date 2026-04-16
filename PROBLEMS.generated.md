@@ -6,14 +6,14 @@
 
 ## Problems by pattern
 
-### Arrays and Hashing
+### Arraysandhashing
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
 | 1 | [Group Anagram](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/GroupAnagram.kt) | Medium | `GroupAnagram.kt` |
 | 2 | [Top KFrequent Elements](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/TopKFrequentElements.kt) | Medium | `TopKFrequentElements.kt` |
 
-### Binary Search
+### Binarysearch
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
@@ -21,7 +21,7 @@
 | 2 | [Find Min Rotated Sorted Array](src/main/kotlin/com/mr/patterns/binarysearch/medium/FindMinRotatedSortedArray.kt) | Medium | `FindMinRotatedSortedArray.kt` |
 | 3 | [Search Rotated Sorted Array](src/main/kotlin/com/mr/patterns/binarysearch/medium/SearchRotatedSortedArray.kt) | Medium | `SearchRotatedSortedArray.kt` |
 
-### DP
+### Dp
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
@@ -29,6 +29,7 @@
 | 2 | [Coin Change](src/main/kotlin/com/mr/patterns/dp/medium/CoinChange.kt) | Medium | `CoinChange.kt` |
 | 3 | [House Robber](src/main/kotlin/com/mr/patterns/dp/medium/HouseRobber.kt) | Medium | `HouseRobber.kt` |
 | 4 | [House Robber II](src/main/kotlin/com/mr/patterns/dp/medium/HouseRobberII.kt) | Medium | `HouseRobberII.kt` |
+| 5 | [Longest Common Subsequence](src/main/kotlin/com/mr/patterns/dp/medium/LongestCommonSubsequence.kt) | Medium | `LongestCommonSubsequence.kt` |
 
 ### Graphs
 
@@ -36,6 +37,13 @@
 |---|---------|------------|------|
 | 1 | [Clone Graph](src/main/kotlin/com/mr/patterns/graphs/medium/CloneGraph.kt) | Medium | `CloneGraph.kt` |
 | 2 | [Number Of Islands](src/main/kotlin/com/mr/patterns/graphs/medium/NumberOfIslands.kt) | Medium | `NumberOfIslands.kt` |
+
+### Heapspriorityqueues
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [KClosest Points To Origin](src/main/kotlin/com/mr/patterns/heapspriorityqueues/medium/KClosestPointsToOrigin.kt) | Medium | `KClosestPointsToOrigin.kt` |
+| 2 | [Merge KSorted Lists](src/main/kotlin/com/mr/patterns/heapspriorityqueues/hard/MergeKSortedLists.kt) | Hard | `MergeKSortedLists.kt` |
 
 ### Sliding Window
 
@@ -101,17 +109,18 @@
 
 ## Problem count summary
 
-| Category           | Easy | Medium | Hard | Total |
-|--------------------|------|--------|------|-------|
-| Arrays and Hashing | 0 | 2 | 0 | 2 |
-| Binary Search      | 1 | 2 | 0 | 3 |
-| DP                 | 1 | 3 | 0 | 4 |
-| Graphs             | 0 | 2 | 0 | 2 |
-| Sliding Window     | 2 | 2 | 0 | 4 |
-| Stacks             | 1 | 2 | 0 | 3 |
-| Trees              | 4 | 2 | 0 | 6 |
-| Two Pointers       | 1 | 2 | 0 | 3 |
-| Set 1              | 2 | 2 | 1 | 5 |
-| Set 2              | 2 | 3 | 0 | 5 |
-| **Total**          | **14** | **22** | **1** | **37** |
+| Category | Easy | Medium | Hard | Total |
+|----------|------|--------|------|-------|
+| Arraysandhashing | 0 | 2 | 0 | 2 |
+| Binarysearch | 1 | 2 | 0 | 3 |
+| Dp | 1 | 4 | 0 | 5 |
+| Graphs | 0 | 2 | 0 | 2 |
+| Heapspriorityqueues | 0 | 1 | 1 | 2 |
+| Sliding Window | 2 | 2 | 0 | 4 |
+| Stacks | 1 | 2 | 0 | 3 |
+| Trees | 4 | 2 | 0 | 6 |
+| Two Pointers | 1 | 2 | 0 | 3 |
+| Set 1 | 2 | 2 | 1 | 5 |
+| Set 2 | 2 | 3 | 0 | 5 |
+| **Total** | **14** | **24** | **2** | **40** |
 
