@@ -1,5 +1,6 @@
 package com.mr.patterns.heapspriorityqueues.hard
 
+import com.mr.patterns.ListNode
 import java.util.PriorityQueue
 
 /**
@@ -37,10 +38,6 @@ import java.util.PriorityQueue
  * lists[i] is sorted in ascending order.
  * The sum of lists[i].length will not exceed 104.
  */
-
-class ListNode(var `val`: Int) {
-    var next: ListNode? = null
-}
 class MergeKSortedLists {
 
     fun mergeKLists(lists: Array<ListNode?>): ListNode? {
@@ -77,7 +74,7 @@ class MergeKSortedLists {
         val dummy = ListNode(-1)
         var curr = dummy
         while (curr1 != null && curr2 != null) {
-            if (curr1.`val` < curr2.`val`) {
+            if (curr1.value < curr2.value) {
                 curr.next = curr1
                 curr1 = curr1.next
             } else {
@@ -101,7 +98,7 @@ class MergeKSortedLists {
     // - O(k): in-place method costs O(1).
     //         - Priority Q implemented as heap costs O(k) space.
     private fun mergeKLists_Heap(lists: Array<ListNode?>): ListNode? {
-        val heap = PriorityQueue<ListNode>(compareBy { it.`val` })
+        val heap = PriorityQueue<ListNode>(compareBy { it.value })
 
         // Push the head of each list into the heap
         for (head in lists) {
@@ -112,13 +109,13 @@ class MergeKSortedLists {
         var curr = dummy
         while(heap.isNotEmpty()) {
             curr.next = heap.poll()
-            println("adding to merge list: ${curr.next?.`val`}")
+            println("adding to merge list: ${curr.next?.value}")
             curr = curr.next!!
 
             // If the popped node has a next node, add it to the heap
             if (curr.next != null) {
                 heap.add(curr.next)
-                println("adding to heap: ${curr.next!!.`val`}")
+                println("adding to heap: ${curr.next!!.value}")
             }
         }
         return dummy.next
@@ -144,7 +141,7 @@ fun toList(head: ListNode?): List<Int> {
     val result = mutableListOf<Int>()
     var curr = head
     while (curr != null) {
-        result.add(curr.`val`)
+        result.add(curr.value)
         curr = curr.next
     }
     return result

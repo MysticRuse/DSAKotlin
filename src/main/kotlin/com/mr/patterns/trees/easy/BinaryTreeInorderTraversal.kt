@@ -1,6 +1,6 @@
 package com.mr.patterns.trees.easy
 
-import com.mr.patterns.trees.TreeNode
+import com.mr.patterns.TreeNode
 
 /**
  * 94. Binary Tree Inorder Traversal

@@ -1,5 +1,7 @@
 package com.mr.patterns.twopointers.medium
 
+import com.mr.patterns.ListNode
+
 /**
  * 19. Remove Nth Node From End of List
  * Medium
@@ -23,10 +25,6 @@ package com.mr.patterns.twopointers.medium
  * 0 <= Node.val <= 100
  * 1 <= n <= sz
  */
-
-class ListNode(var value: Int) {
-    var next: ListNode? = null
-}
 
 /**
  * Two Pointer (fast and slow) approach

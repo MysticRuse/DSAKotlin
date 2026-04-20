@@ -1,6 +1,6 @@
 package com.mr.patterns.trees.medium
 
-import com.mr.patterns.trees.TreeNode
+import com.mr.patterns.TreeNode
 
 /**
  * 199. Binary Tree Right Side View

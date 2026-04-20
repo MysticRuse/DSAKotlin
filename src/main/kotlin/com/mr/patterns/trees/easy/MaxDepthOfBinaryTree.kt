@@ -1,6 +1,6 @@
 package com.mr.patterns.trees.easy
 
-import com.mr.patterns.trees.TreeNode
+import com.mr.patterns.TreeNode
 
 /**
  * 104. Maximum Depth of Binary Tree

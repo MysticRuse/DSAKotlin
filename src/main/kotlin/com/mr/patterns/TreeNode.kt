@@ -1,4 +1,4 @@
-package com.mr.patterns.trees
+package com.mr.patterns
 
 class TreeNode(var value: Int) {
     var left: TreeNode? = null
