@@ -13,6 +13,14 @@
 | 1 | [Group Anagram](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/GroupAnagram.kt) | Medium | `GroupAnagram.kt` |
 | 2 | [Top KFrequent Elements](src/main/kotlin/com/mr/patterns/arraysandhashing/medium/TopKFrequentElements.kt) | Medium | `TopKFrequentElements.kt` |
 
+### Backtracking
+
+| # | Problem | Difficulty | File |
+|---|---------|------------|------|
+| 1 | [Combination Sum](src/main/kotlin/com/mr/patterns/backtracking/medium/CombinationSum.kt) | Medium | `CombinationSum.kt` |
+| 2 | [Permutations](src/main/kotlin/com/mr/patterns/backtracking/medium/Permutations.kt) | Medium | `Permutations.kt` |
+| 3 | [Subsets](src/main/kotlin/com/mr/patterns/backtracking/medium/Subsets.kt) | Medium | `Subsets.kt` |
+
 ### Binary Search
 
 | # | Problem | Difficulty | File |
@@ -38,7 +46,7 @@
 | 1 | [Clone Graph](src/main/kotlin/com/mr/patterns/graphs/medium/CloneGraph.kt) | Medium | `CloneGraph.kt` |
 | 2 | [Number Of Islands](src/main/kotlin/com/mr/patterns/graphs/medium/NumberOfIslands.kt) | Medium | `NumberOfIslands.kt` |
 
-### Heaps/Priority Queues
+### Heaps/PriorityQueues
 
 | # | Problem | Difficulty | File |
 |---|---------|------------|------|
@@ -112,18 +120,19 @@
 
 ## Problem count summary
 
-| Category              | Easy | Medium | Hard | Total |
-|-----------------------|------|--------|------|-------|
-| Arrays and Hashing    | 0 | 2 | 0 | 2 |
-| Binary Search         | 1 | 2 | 0 | 3 |
-| DP                    | 1 | 4 | 0 | 5 |
-| Graphs                | 0 | 2 | 0 | 2 |
-| Heaps/Priority Queues | 0 | 1 | 1 | 2 |
-| Sliding Window        | 2 | 2 | 0 | 4 |
-| Stacks                | 1 | 2 | 0 | 3 |
-| Trees                 | 4 | 2 | 0 | 6 |
-| Two Pointers          | 2 | 4 | 0 | 6 |
-| Set 1                 | 2 | 2 | 1 | 5 |
-| Set 2                 | 2 | 3 | 0 | 5 |
-| **Total**             | **15** | **26** | **2** | **43** |
+| Category             | Easy | Medium | Hard | Total |
+|----------------------|------|--------|------|-------|
+| Arrays and Hashing   | 0 | 2 | 0 | 2 |
+| Backtracking         | 0 | 3 | 0 | 3 |
+| Binary Search        | 1 | 2 | 0 | 3 |
+| DP                   | 1 | 4 | 0 | 5 |
+| Graphs               | 0 | 2 | 0 | 2 |
+| Heaps/PriorityQueues | 0 | 1 | 1 | 2 |
+| Sliding Window       | 2 | 2 | 0 | 4 |
+| Stacks               | 1 | 2 | 0 | 3 |
+| Trees                | 4 | 2 | 0 | 6 |
+| Two Pointers         | 2 | 4 | 0 | 6 |
+| Set 1                | 2 | 2 | 1 | 5 |
+| Set 2                | 2 | 3 | 0 | 5 |
+| **Total**            | **15** | **29** | **2** | **46** |
 
